@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Подключение Бутстрапа -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <button id="aq">Изменить цвет</button>
+  <button id="ak">Вернуть</button>
+  
+   <div>
+     <ol>
+       <li style="font-size: 30px;">Лучшие повара</li>
+       <li style="font-size: 30px;">Живая Музыка</li>
+       <li style="font-size: 30px;">Вкусная еда</li>
+       <li style="font-size: 30px;">Дешевые цены</li>
+     </ol>
+     <div class="spinner-border" role="status">
+      <span class="visually-hidden">Loading...</span>
+    </div>
+
+   </div>
+   <p>Магия jquery</p>
+<p>Кликни!</p>
+<p>На нас</p>
+<button>Start Animation</button>
+
+<p>By default, all HTML elements have a static position, and cannot be moved. To manipulate the position, remember to first set the CSS position property of the element to relative, fixed, or absolute!</p>
+
+<div style="background:#98bf21;height:100px;width:100px;position:absolute;"></div>
+
+
+   <div>
+     <h1>Картинки</h1>
+     <img src="https://reconomica.ru/wp-content/uploads/2018/12/%D0%BF%D0%BE%D0%B2%D0%B0%D1%80-%D0%B8-%D0%BE%D0%BB%D0%B8%D0%B2%D0%BA%D0%BE%D0%B2%D0%BE%D0%B5-%D0%BC%D0%B0%D1%81%D0%BB%D0%BE.jpg" style="width: 30%;" alt="">
+     <img src="http://ado24.online/wp-content/uploads/2015/06/prices.jpg" style="width: 50%;" alt="">
+   </div>
+    <script src="script.js"></script>
+    <!-- jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>    $(document).ready(function(){
+      $("p").click(function(){
+        $(this).hide();
+      });
+
+
+      $(document).ready(function(){
+  $("button").click(function(){
+    $("div").animate({left: '250px'});
+  });
+});
+    });</script>
+</body>
+</html>

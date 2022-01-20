@@ -1,0 +1,9 @@
+.details__image_bottom:hover {
+    z-index: 1;
+}
+.details__image:hover {
+    transform: scale(1.1);
+}
+.gallery__image:hover {
+    transform: scale(1.1);
+}
